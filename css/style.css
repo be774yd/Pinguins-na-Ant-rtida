@@ -1,0 +1,392 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: "Libertinus Math", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+:root{
+--Branco-gelo: #f5f9fa;
+--degrade-btn: linear-gradient( #A8D0DB 0%, #F4A259 100%);
+--azul-glacial: #A8D0DB;
+--cinza-rocha: #5E6E73;
+--preto-pinguin: #1C1C1C;
+--laranja-bico: #F4A259;
+--azul-escuro: #003b5c;
+--vermelho: #d32f2f;
+}
+.background-branco-gelo{ 
+    background: var(--Branco-gelo);
+}
+/*classe reutilizavel*/
+.container{ 
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+section,
+footer{
+    padding: 2.7rem 0;
+
+}
+.btn-gradient{
+    padding: 10px 25px;
+    color: var(--cinza-rocha);
+    border: none;
+    cursor: pointer;
+    background-image: var(--degrade-btn);
+
+}
+/*classe do site*/
+nav{
+    /*estilizando o menu*/
+    display: flex;
+    /*vai dar um espaçamento entre os itens*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo a{
+font-size: 30px;
+font-weight: bold;
+color: var(--cinza-rocha);
+
+}
+.ul{
+    display: flex;
+    align-items: center;
+}
+.ul li{
+    margin: 0 30px;
+    font-size: 15px;
+
+}
+.ul li a{
+    color: var(--laranja-bico);
+}
+/*main*/
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+.main-text{
+    width: 50%;
+    color: var(--cinza-rocha);
+}
+.main-text h1{
+    font-size: 4.5rem;
+    
+}
+.main-text div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.main-img{
+    width: 50%;
+    
+}
+.main-img img{
+    width: 100%;
+
+
+}
+/*icone de menu*/
+.menu-icon{
+    display: none;
+    position: relative;
+    z-index: 10;
+    
+   
+}
+.resultados{
+    background: #e0f7fa;
+}
+.resultados .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.resultados .container .resultados-text{
+    color: var(--azul-escuro);
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 50%;}
+    .resultados {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--vermelho);
+
+
+    }
+    .resultados p{
+        text-align: center;
+        margin: 0 30px;
+        font-size: 20px;
+
+    }
+    .resultados p span{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    /*--sec diferencias--*/
+    .diferencias {
+  background-color: rgb(235, 247, 242); /* ou qualquer cor */
+  padding: 40px 0; /* opcional: adiciona espaçamento interno */
+}
+
+    .diferencias .container{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px auto;
+        gap: 20px;
+
+    }
+    .diferencias .card{
+        width: 30%;
+        cursor: pointer;
+        padding: 30px;
+        border-radius: 15px;
+        background-color: var(--azul-glacial);
+
+    }
+    .diferencias .card:hover{
+        background-color: var(--laranja-bico);
+        color: var(--Branco-gelo);
+        transition: 0.3s;
+    }
+    .diferencias .card img{
+        width: 60px;
+    }
+    .diferencias .card .titulo{
+        margin: 13px 0;
+        font-weight: 600;
+        color: var(--azul-escuro);
+    }
+    .diferencias .card p{
+        font-size: 15px;
+        color: var(--preto-pinguin);
+
+    }
+    /*--section antartidan(meio)--*/
+    .antartidan .container{
+        display: flex;
+        align-items: center;
+    }
+    .antartidan .antartidan-img{
+        width: 50%;
+    }
+    .antartidan .antartidan-img img{
+        width: 100%;
+        border-radius: 10%;
+    }
+    .antartidan .antartidan-text{
+        width: 50%;
+        padding-left: 90px;
+        
+    }
+    .antartidan .antartidan-text h2{
+        font-size: 2.5em;
+        color: var(--laranja-bico);
+    }
+    .antartidan .antartidan-text p{
+        margin: 20px 0;
+        color: var(--cinza-rocha);
+        
+    }
+    .antartidan .antartidan-text p b {
+        color: var(--azul-escuro);
+        font-size: 25px;
+    }
+    .predadores h2{
+        font-size: 2.5rem;
+        color: var(--laranja-bico);
+    }
+    .predadores .cards{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        
+    }
+    .predadores .cards .card-item{
+        width: 30%;
+        text-align: center;
+        padding: 30px 0;
+        border-radius: 20px;
+        background-color: var(--azul-glacial);
+
+    }
+    .predadores .cards img{
+        width: 100px;
+    }
+    .predadores .cards p{
+        font-size: 1.5rem;
+        color: var(--azul-escuro);
+        margin: 20px 0;
+    }
+    .opniao-section {
+  background-color: rgba(103, 107, 107, 0.671);
+  border-radius: 20px;
+  text-align: center;
+  margin: 60px auto;
+  max-width: 700px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.opniao-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #004d40;
+}
+
+.opniao-section p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.opniao-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.opniao-form input,
+.opniao-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #b2dfdb;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.opniao-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.opniao-form button {
+  background-color: #00796b;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.opniao-form button:hover {
+  background-color: #004d40;
+}
+
+
+
+
+
+/*responsivo*/
+@media(max-width: 960px){
+   .menu-icon{
+    display: block;
+    color:#F4A259
+ }
+.ul{
+    position: fixed;
+    top:0%;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    background: var(--cinza-rocha);
+    transition: 0.3s;
+    flex-direction: column;
+    justify-content: center;
+ 
+
+}
+.ul li{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.ul.ativo{
+    left: 0;
+}
+main .container{
+    flex-direction: column;
+
+}
+main .container .main-img{
+    width: 100%;
+}
+main .container .main-text{
+    width: 100%;
+    text-align: center;
+
+}
+main .container .main-text h1{
+    font-size: 4rem;
+}
+main .container .main-text div{
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.resultados .container{
+    flex-direction: column;
+    text-align: center;
+
+
+}
+.diferencias .container{
+    flex-direction: column;
+
+}
+.diferencias .card{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.antartidan .container{
+    flex-direction: column-reverse;}
+ 
+    
+ .antartidan .antartidan-text,
+ .antartidan .antartidan-img{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+ }   
+ .predadores .cards{
+    flex-direction: column;
+ }
+ .predadores .cards .card-item{
+    width: 100%;
+    margin-bottom: 50px;
+ }
+ .opniao-section {
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 50px;
+ }
+
+
+
+
+
+}
+
+
+  
+
+
+
+
+
